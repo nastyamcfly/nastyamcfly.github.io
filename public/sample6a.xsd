@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Пример xsd, import schemaLocation
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:bs="http://base"
+           elementFormDefault="qualified"
+           xmlns="http://default"
+           targetNamespace="http://default">
+
+     <xs:import namespace="http://base" schemaLocation="http://nastyamcfly.com/public/sample6-base.xsd"/>           
+
+    <xs:element name="Документ">
+        <xs:annotation>
+            <xs:documentation>Корневой элемент</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="Таблица">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Строка" type="bs:ТипСтрока" minOccurs="2" maxOccurs="5" />
+                        </xs:sequence>
+                        <xs:attribute name="Версия" type="bs:ТипВерсия" use="required">
+                            <xs:annotation>
+                                <xs:documentation>Версия</xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
