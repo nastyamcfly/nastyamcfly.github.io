@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://base"
+           targetNamespace="http://base"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="ТипСтрока">
+        <xs:sequence>
+            <xs:element name="ИД">
+                <xs:annotation>
+                    <xs:documentation>ИД</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Имя">
+                <xs:annotation>
+                    <xs:documentation>Имя</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="ТипВерсия">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
