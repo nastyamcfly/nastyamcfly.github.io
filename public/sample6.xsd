@@ -10,7 +10,8 @@
            xmlns="http://default"
            targetNamespace="http://default">
 
-    <xs:import namespace="http://base" schemaLocation="http://nastyamcfly.com/public/sample6-base.xsd"/>
+<!--     <xs:import namespace="http://base" schemaLocation="http://nastyamcfly.com/public/sample6-base.xsd"/> -->
+           <xs:import namespace="http://base" schemaLocation="../public/sample6-base.xsd"/>
 
     <xs:element name="Документ">
         <xs:annotation>
