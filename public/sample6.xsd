@@ -10,7 +10,7 @@
            xmlns="http://default"
            targetNamespace="http://default">
 
-    <xs:import namespace="http://base" schemaLocation="https://raw.githubusercontent.com/redandspring/Get-Lucky/master/public/example-base.xsd?token=AEGA4LGIL5WKHNKNGANP6Y3BSJDLO"/>
+    <xs:import namespace="http://base" schemaLocation="http://nastyamcfly.com/public/sample6-base.xsd"/>
 
     <xs:element name="Документ">
         <xs:annotation>
